@@ -26,7 +26,7 @@ def run_model_svm():
 
     dimensions = np.array(['raw', 80, 200])
     c_list = np.array([0.01, 0.1, 1])  # Penalty parameter C in {0.01, 0.1, 1}
-    svm_result = pd.DataFrame(columns=['Dim', 'C', 'Accuracy(%)'])
+    svm_result = pd.DataFrame(columns=['Dim', 'C', 'Accuracy'])
 
     for idx1, dim in enumerate(dimensions):
 
@@ -48,7 +48,7 @@ def run_model_svm():
             pred_label, pred_acc, pred_val = svm.svm_fit_pred(train_svm, train_y, test_svm, test_y)
             svm_result.loc[idx, 'Dim'] = dim
             svm_result.loc[idx, 'C'] = c
-            svm_result.loc[idx, 'Accuracy(%)'] = pred_acc[0]
+            svm_result.loc[idx, 'Accuracy'] = pred_acc[0] / 100
 
     svm_result.to_csv('./svm_accuracy.csv', index=False)
 
