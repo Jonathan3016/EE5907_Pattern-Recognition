@@ -39,9 +39,9 @@ def run_model_lda(mode):
     k_near = 1  # Default the value of k-nearest as k=1
     lda_result = pd.DataFrame(columns=['Dim', 'acc@CMU PIE', 'acc@Selfie', 'acc@Total'])
     if mode == '500_samples':
-        title = './lda_500_samples_accuracy.csv'
+        title = '../result/lda/lda_500_samples_accuracy.csv'
     else:
-        title = './lda_all_samples_accuracy.csv'
+        title = '../result/lda/lda_all_samples_accuracy.csv'
     for idx, dim in enumerate(dimensions):
         train_reduced = lda.reduce_train_dim(n_component=dim)
         if mode == '500_samples' and dim != 9:
