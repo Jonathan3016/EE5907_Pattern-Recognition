@@ -60,7 +60,7 @@ The files related to PCA are stored in three separate folders as follows:
 │   ├──   ├── pca_accuracy.csv
 ```
 
-* The model build for PCA is stored in 'pca.py', to run the PCA model, you can open this project and use the following command:
+* The model build for PCA is stored in 'PCA.py', to run the PCA model, you can open this project and use the following command:
 
 ```sh
   python run\run_PCA.py
@@ -83,8 +83,28 @@ The files related to LDA are stored in three separate folders as follows:
 │   ├──   ├── lda_all_samples_accuracy.csv
 ```
 
-* The model build for LDA is stored in 'lda.py', to run the PCA model, you can open this project and use the following command:
+* The model build for LDA is stored in 'LDA.py', to run the LDA model, you can open this project and use the following command:
 
 ```sh
   python run\run_LDA.py
+```
+
+### Support Vector Machine (SVM)
+
+This project applies to `libsvm`, which you can download from [here](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) and check out how to use. The files related to SVM are stored in three separate folders as follows:
+
+```
+├── model
+│   ├── SVM.py
+├── run
+│   ├── run_SVM.py
+├── result
+│   ├── svm
+│   ├──   ├── svm_accuracy.csv
+```
+
+* The model build for LDA is stored in 'lda.py', to run the SVM model, you can open this project and use the following command:
+
+```sh
+  python run\run_SVM.py
 ```
