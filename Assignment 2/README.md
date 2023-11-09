@@ -9,7 +9,7 @@ As for the detailed project requirements, you can find the corresponding file [C
 
 This project is conducted on the [CMU PIE](https://www.ri.cmu.edu/publications/the-cmu-pose-illumination-and-expression-database/) dataset and selfie photos taken by myself which stored in a folder called `Selfie`. There are in total 68 different subjects and I randomly selected 25 subjects from it. For each chosen subject, use 70% of the images provided for training and use the remaining 30% for testing. In addition to the provided CMU PIE images, I took 10 selfie photos for myself, converted them to grayscale images, resized them into the same resolution as the CMU PIE images (i.e., 32×32) and split them into 7 for training and 3 for testing. 
 
-* The dataset processing code used in this project is stored in the data folder along with the processing results in the format '.npy'.
+* The dataset processing code used in this project is stored in the ["data"](https://github.com/Jonathan3016/EE5907_Pattern-Recognition/tree/29e2c622cd6c6b4b66e6bb91ffb60a35f9b0e073/Assignment%202/data) folder along with the processing results in the format '.npy'.
   
 ```
 ├── data
@@ -22,7 +22,7 @@ This project is conducted on the [CMU PIE](https://www.ri.cmu.edu/publications/t
 
 ## Prerequisites
 
-All the packages needed for this project are documented in the `requirements.txt` file, along with their exact versions.
+All the packages needed for this project are documented in the ["requirements.txt"](https://github.com/Jonathan3016/EE5907_Pattern-Recognition/blob/29e2c622cd6c6b4b66e6bb91ffb60a35f9b0e073/Assignment%202/requirements.txt) file, along with their exact versions.
 
 * All the dependencies can be installed using the following command:
 
