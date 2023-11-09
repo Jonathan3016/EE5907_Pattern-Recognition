@@ -22,3 +22,22 @@ This project is conducted on the [CMU PIE](https://www.ri.cmu.edu/publications/t
 
 ## Prerequisites
 
+All the packages needed for this project are documented in the `requirements.txt` file, along with their exact versions.
+
+* All the dependencies can be installed using the following command:
+
+```sh
+  pip install -r requirements.txt
+```
+
+Some important dependencies and their version numbers are listed below：
+
+- Python 3.11
+- numpy == 1.26.0
+- matplotlib == 3.7.1
+- libsvm-official == 3.32.0
+- torch == 2.1.0 + cu118
+- pandas == 1.5.3
+
+## Getting Started
+
