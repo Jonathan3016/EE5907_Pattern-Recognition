@@ -50,7 +50,7 @@ def run_model_svm():
             svm_result.loc[idx, 'C'] = c
             svm_result.loc[idx, 'Accuracy'] = pred_acc[0] / 100
 
-    svm_result.to_csv('./svm_accuracy.csv', index=False)
+    svm_result.to_csv('../result/svm/svm_accuracy.csv', index=False)
 
 
 if __name__ == '__main__':
