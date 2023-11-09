@@ -103,8 +103,32 @@ This project applies to `libsvm`, which you can download from [here](https://www
 │   ├──   ├── svm_accuracy.csv
 ```
 
-* The model build for LDA is stored in 'lda.py', to run the SVM model, you can open this project and use the following command:
+* The model build for SVM is stored in 'SVM.py', to run the SVM model, you can open this project and use the following command:
 
 ```sh
   python run\run_SVM.py
+```
+
+### Convolution Neural Network (CNN)
+
+This project applies to `torch`, which you can download from [here](https://pytorch.org/) and check out how to use. The files related to CNN are stored in three separate folders as follows:
+
+```
+├── model
+│   ├── CNN.py
+├── run
+│   ├── run_CNN.py
+├── result
+│   ├── cnn
+│   ├──   ├── best_model.pth
+│   ├──   ├── CNN_test_accuracy.npy
+│   ├──   ├── CNN_train_losses.npy
+│   ├──   ├── CNN_train_loss.png
+│   ├──   ├── CNN_test_accuracy.png
+```
+
+* The model build for CNN is stored in 'CNN.py', to run the CNN model, you can open this project and use the following command:
+
+```sh
+  python run\run_CNN.py
 ```
