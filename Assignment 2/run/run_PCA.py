@@ -57,7 +57,7 @@ def run_model_pca():
         pca_result.loc[idx, 'acc@CMU PIE'] = acc_cmupie
         pca_result.loc[idx, 'acc@Selfie'] = acc_selfie
         pca_result.loc[idx, 'acc@Total'] = acc_total
-    pca_result.to_csv('./pca_accuracy.csv', index=False)
+    pca_result.to_csv('../result/pca/pca_accuracy.csv', index=False)
 
 
 if __name__ == '__main__':
