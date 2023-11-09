@@ -41,3 +41,50 @@ Some important dependencies and their version numbers are listed below：
 
 ## Getting Started
 
+This project contains a total of 4 main components: Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA),  Support Vector Machine (SVM), and Convolution Neural Network (CNN).
+
+### Principal Component Analysis (PCA)
+
+The files related to PCA are stored in three separate folders as follows:
+
+```
+├── model
+│   ├── PCA.py
+├── run
+│   ├── run_PCA.py
+├── result
+│   ├── pca
+│   ├──   ├── PCA_2-dimensions.png
+│   ├──   ├── PCA_3-dimensions.png
+│   ├──   ├── PCA_eigenfaces.png
+│   ├──   ├── pca_accuracy.csv
+```
+
+* The model build for PCA is stored in 'pca.py', to run the PCA model, you can open this project and use the following command:
+
+```sh
+  python run\run_PCA.py
+```
+
+### Linear Discriminant Analysis (LDA)
+
+The files related to LDA are stored in three separate folders as follows:
+
+```
+├── model
+│   ├── LDA.py
+├── run
+│   ├── run_LDA.py
+├── result
+│   ├── lda
+│   ├──   ├── LDA_2-dimensions.png
+│   ├──   ├── LDA_3-dimensions.png
+│   ├──   ├── lda_500_samples_accuracy.csv
+│   ├──   ├── lda_all_samples_accuracy.csv
+```
+
+* The model build for LDA is stored in 'lda.py', to run the PCA model, you can open this project and use the following command:
+
+```sh
+  python run\run_LDA.py
+```
