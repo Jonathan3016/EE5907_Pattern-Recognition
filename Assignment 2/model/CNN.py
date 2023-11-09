@@ -113,12 +113,12 @@ class Trainer:
                   f'Test Accuracy: {test_acc:.6f} Best Accuracy: {self.best_acc:.6f}')
 
         print(f'Best epoch: {self.best_epoch:.6f} with test accuracy: {self.best_acc:.6f}')
-        np.save('../result/CNN_train_losses.npy', np.array(self.train_loss))
-        np.save('../result/CNN_test_accuracy.npy', np.array(self.test_acc))
+        np.save('../result/cnn/CNN_train_losses.npy', np.array(self.train_loss))
+        np.save('../result/cnn/CNN_test_accuracy.npy', np.array(self.test_acc))
 
     def save_model(self):
 
-        path = '../result/best_model.pth'
+        path = '../result/cnn/best_model.pth'
         torch.save(self.model.state_dict(), path)
 
     def plot_result(self):
@@ -131,7 +131,7 @@ class Trainer:
         plt.vlines(self.best_epoch, 0, 3, colors="red", linestyles="dashed")
         plt.legend()
         plt.tight_layout()
-        plt.savefig('../result/CNN_train_loss.png', bbox_inches='tight')
+        plt.savefig('../result/cnn/CNN_train_loss.png', bbox_inches='tight')
 
         plt.figure(figsize=(8, 6))
         plt.plot(range(self.epochs), self.test_acc, label='Test Accuracy')
@@ -141,7 +141,7 @@ class Trainer:
         plt.vlines(self.best_epoch, 0, 100, colors="red", linestyles="dashed")
         plt.legend()
         plt.tight_layout()
-        plt.savefig('../result/CNN_test_accuracy.png', bbox_inches='tight')
+        plt.savefig('../result/cnn/CNN_test_accuracy.png', bbox_inches='tight')
 
 
 def generate_dataloader(train_x, train_y, test_x, test_y, batch_size):
